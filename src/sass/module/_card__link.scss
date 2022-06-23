@@ -1,0 +1,29 @@
+@use "global" as *;
+.card__link {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+  transition: 0.25s;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.card__link .card__title,
+.card__link .card__text {
+  transition: 0.25s;
+}
+
+.card__link:focus,
+.caard__link:hover {
+  opacity: 0.75;
+}
+
+.card__link:focus .card__title,
+.card__link:focus .card__text,
+.card__link:hover .card__title,
+.card__link:hover .card__text {
+  color: #e25c00;
+  text-decoration: underline;
+}

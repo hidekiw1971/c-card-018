@@ -1,0 +1,30 @@
+@use "global" as *;
+.cards__col3 {
+  margin-bottom: rem(-20);
+  @include mq(md) {
+    margin-bottom: rem(-30);
+  }
+  @include mq(xl) {
+  }
+}
+
+.cards__col3 > .cards__item {
+  width: 100%;
+  margin-right: rem(0);
+  margin-bottom: rem(20);
+  @include mq(md) {
+    width: 31.707%;
+    margin-right: 2.43902%;
+    margin-bottom: rem(30);
+  }
+  @include mq(xl) {
+  }
+}
+
+.cards__col3 > .cards__item:nth-of-type(3n) {
+  @include mq(md) {
+    margin-right: rem(0);
+  }
+  @include mq(xl) {
+  }
+}
